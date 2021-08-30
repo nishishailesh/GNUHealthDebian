@@ -149,7 +149,7 @@ table inet filter {
 
 ## Use tryton client to access GNUHealth
 
-### install  tryton-client (in same of any other computer)
+### install  tryton-client (in same or any other computer)
 ```
  apt install tryton-client  
  
