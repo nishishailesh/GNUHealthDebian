@@ -95,7 +95,7 @@ createuser root -s
 psql nchshmis
 ```
 
-###  Use postgrsql client to set root password
+###  Use postgresql client to set root password
 
 psql (13.3 (Debian 13.3-1))  
 Type "help" for help.  
