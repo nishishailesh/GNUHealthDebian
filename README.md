@@ -147,6 +147,10 @@ table inet filter {
 /root/start_gnuhealth.sh
 ```
 
+
+## Start GNUHealth server at boot time as service
+to be continued...
+
 ## Use tryton client to access GNUHealth
 
 #### install  tryton-client (in same or any other computer)
