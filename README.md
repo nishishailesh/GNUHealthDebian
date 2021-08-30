@@ -149,7 +149,40 @@ table inet filter {
 
 
 ## Start GNUHealth server at boot time as service
-to be continued...
+Create a file with following content (name it as gnuhealth.service)  
+```
+[Unit]
+Description=Installs GNUHEalth as service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/root/start_gnuhealth.sh
+User=root
+[Install]
+WantedBy=multi-user.target
+
+#cp gnuhealth.service /lib/systemd/system/
+#systemctl daemon-reload
+#systemctl enable tosoh_read
+#systemctl enable tosoh_write
+#service gnuhealth start
+#service gnuhealth status
+```
+
+Look at comments in the file  
+they are the commands to be run to install and start gnuhealth service  
+
+```
+cp gnuhealth.service /lib/systemd/system/
+systemctl daemon-reload
+systemctl enable tosoh_read
+systemctl enable tosoh_write
+service gnuhealth start
+service gnuhealth status
+```
+
+
 
 ## Use tryton client to access GNUHealth  (in same or any other computer)
 
