@@ -149,22 +149,22 @@ table inet filter {
 
 ## Use tryton client to access GNUHealth
 
-### install  tryton-client (in same or any other computer)
+#### install  tryton-client (in same or any other computer)
 ```
  apt install tryton-client  
  
 ```
-### start tryton client
+#### start tryton client
 application->office  
 
-### Login at tryton client
+#### Login at tryton client
 
 write host address/name    
 write database name (my example: nchshmis)  
 write username: admin (always, when first time)  
 password is the one given at "Initialize database ( as root user )" topic above  
 
-### Install Modules
+#### Install Modules
 to be continued...
 
 
