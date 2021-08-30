@@ -108,7 +108,6 @@ nchshmis=# \q
 ##  exit posgres user and restart postgrsql service
 ```
 exit
-logout
 service postgresql restart
 ```
 
