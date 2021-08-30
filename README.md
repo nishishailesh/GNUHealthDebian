@@ -5,7 +5,7 @@
   
 # Requirements and Assumptions
   This guide can help install GNU Health in Debian 11.  
-  However, live other guides it can be used for other linux distributions, too.  
+  However, (like other guides) it can be used for other linux distributions, too.  
   Most guides create a user called gnuhealth  
   But, This guide uses bare root user
   
