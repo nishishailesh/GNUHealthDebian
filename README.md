@@ -151,9 +151,9 @@ table inet filter {
 ## Start GNUHealth server at boot time as service
 to be continued...
 
-## Use tryton client to access GNUHealth
+## Use tryton client to access GNUHealth  (in same or any other computer)
 
-#### install  tryton-client (in same or any other computer)
+#### install  tryton-client
 ```
  apt install tryton-client  
  
