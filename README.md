@@ -204,15 +204,16 @@ service gnuhealth status
 application->office  
 
 #### Login at tryton client
-
+```
 write host address/name    
 write database name (my example: nchshmis)  
 write username: admin (always, when first time)  
 password is the one given at "Initialize database ( as root user )" topic above  
 
-
+```
 
 ## Install web based client service
+```
 sao version must be same as trytond (e.g 6.0)
 download from git (example below)
 https://github.com/tryton/sao/tree/6.0
@@ -229,6 +230,6 @@ edit web section as follows
 listen = *:8000
 root = /root/gnuhealth/sao-6.0/
 
-
+```
 #### Install Modules
 
