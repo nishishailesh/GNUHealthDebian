@@ -63,6 +63,10 @@ cd gnuhealth-3.8.0/
 ## Install (Some guide ask to download gnuhealth-setup file, but proper file is already present
 ```
 ./gnuhealth-setup install
+
+it will install in /root/gnuhealth
+also adds /root/start_gnuhelath.sh
+and /root/.gnuhealthrc
 ```
 
 ## Change Tryton Configuration
@@ -118,6 +122,11 @@ python3 ./trytond-admin --all --database=nchshmis  -c /root/gnuhealth/tryton/ser
 "admin" email for "nchshmis": xyz@abc.com
 "admin" password for "nchshmis": 
 "admin" password confirmation:  
+
+if password not asked use -p
+for help use 
+python3 ./trytond-admin--help
+
 ```
 
 ## open ports 5432 and 8000 in firewall (if required due to drop policy in firewall)
@@ -201,11 +210,25 @@ write database name (my example: nchshmis)
 write username: admin (always, when first time)  
 password is the one given at "Initialize database ( as root user )" topic above  
 
-#### Install Modules
-to be continued...
 
 
 ## Install web based client service
-to be continued...
+sao version must be same as trytond (e.g 6.0)
+download from git (example below)
+https://github.com/tryton/sao/tree/6.0
+extract
+npm install --production --legacy-peer-deps
+grunt dev
 
+copy sao folder as per choice and give path as shown below
+
+edit  /root/gnuhealth/tryton/server/config/trytond.conf  
+edit web section as follows
+
+[web]
+listen = *:8000
+root = /root/gnuhealth/sao-6.0/
+
+
+#### Install Modules
 
